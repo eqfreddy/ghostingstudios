@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ghosting Studios — Independent software studio</title>
+<meta name="description" content="Ghosting Studios builds small, useful software tools including inboxzombie, zombiesub, and hero-proto.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230f172a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='monospace' font-size='14' font-weight='700' fill='%23f8fafc'%3EG%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --ink: #0f172a;
+    --paper: #fafaf7;
+    --line: #e5e3dc;
+    --muted: #64748b;
+    --accent: #1e293b;
+    --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font: 16px/1.6 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  a:hover { text-decoration-thickness: 2px; }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  header {
+    padding: 48px 0 24px;
+    border-bottom: 1px solid var(--line);
+  }
+  header .brand {
+    font-family: var(--mono);
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  header h1 {
+    font-size: clamp(32px, 5vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 8px 0 16px;
+    font-weight: 600;
+  }
+  header p {
+    font-size: 18px;
+    color: var(--muted);
+    margin: 0;
+    max-width: 52ch;
+  }
+
+  section { padding: 56px 0; border-bottom: 1px solid var(--line); }
+  section h2 {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 24px;
+    font-weight: 600;
+  }
+  section h3 {
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    margin: 0 0 8px;
+    font-weight: 600;
+  }
+  section p { margin: 0 0 12px; }
+
+  .product { padding: 20px 0; border-top: 1px solid var(--line); }
+  .product:first-of-type { border-top: none; padding-top: 0; }
+  .product h3 a { text-decoration: none; }
+  .product h3 a:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+  .product p { color: var(--muted); max-width: 60ch; }
+  .product .link {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent);
+    margin-top: 4px;
+    display: inline-block;
+  }
+
+  .legal { font-size: 14px; color: var(--ink); }
+  .legal h3 { font-size: 16px; margin-top: 24px; margin-bottom: 6px; }
+  .legal h3:first-of-type { margin-top: 0; }
+  .legal p, .legal li { color: var(--muted); }
+  .legal ul { padding-left: 20px; margin: 0 0 12px; }
+  .legal .effective {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 16px;
+  }
+
+  footer {
+    padding: 40px 0 64px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer nav { display: flex; gap: 20px; flex-wrap: wrap; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <div class="brand">Ghosting Studios</div>
+    <h1>Independent software studio.</h1>
+    <p>Small, useful tools — built and operated solo. No subscription traps, no dark patterns, no data resale.</p>
+  </header>
+
+  <section id="products">
+    <h2>What we make</h2>
+
+    <div class="product">
+      <h3><a href="https://zombiesub.com">zombiesub</a></h3>
+      <p>Forward subscription receipts, get a calendar invite plus a cancel-link reminder 3 days before each renewal. Free. No account, no bank link.</p>
+      <a class="link" href="https://zombiesub.com">zombiesub.com →</a>
+    </div>
+
+    <div class="product">
+      <h3><a href="https://inboxzombie.com">inboxzombie</a></h3>
+      <p>Subscription tracking for finance and AP teams. Forward your renewal receipts, get reminded before they auto-charge, cancel in one click.</p>
+      <a class="link" href="https://inboxzombie.com">inboxzombie.com →</a>
+    </div>
+
+    <div class="product">
+      <h3><a href="https://hero-proto.com">hero-proto</a></h3>
+      <p>An IT-themed gacha RPG. Collect heroes, build parties, run dungeons.</p>
+      <a class="link" href="https://hero-proto.com">hero-proto.com →</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Support, partnerships, or anything else: <a href="mailto:hello@ghostingstudios.com">hello@ghostingstudios.com</a></p>
+  </section>
+
+  <section id="privacy" class="legal">
+    <h2>Privacy</h2>
+    <p class="effective">Effective May 17, 2026</p>
+
+    <p>Ghosting Studios operates the websites and applications listed above. This policy explains what data we collect, why, and what we do with it.</p>
+
+    <h3>What we collect</h3>
+    <ul>
+      <li><strong>Account data</strong> — for products that require an account: email address, and a hashed password if applicable.</li>
+      <li><strong>Email forwards</strong> — for inboxzombie and zombiesub: the contents of emails you forward to our capture addresses, processed to extract subscription details.</li>
+      <li><strong>Payment data</strong> — handled entirely by Stripe. We never see or store your full card number.</li>
+      <li><strong>Usage data</strong> — standard server logs (IP, user agent, timestamps) retained up to 30 days for security and abuse prevention.</li>
+    </ul>
+
+    <h3>What we don't do</h3>
+    <ul>
+      <li>We do not link bank accounts.</li>
+      <li>We do not sell, rent, or share personal data with third parties for advertising.</li>
+      <li>We do not use third-party tracking pixels or behavioural advertising cookies.</li>
+    </ul>
+
+    <h3>Third parties we use</h3>
+    <ul>
+      <li><strong>Stripe</strong> — payment processing</li>
+      <li><strong>Anthropic</strong> — AI extraction from forwarded receipts; contents sent for a single extraction call only</li>
+      <li><strong>Resend</strong> — transactional email delivery</li>
+      <li><strong>Cloudflare</strong> — hosting and edge infrastructure</li>
+    </ul>
+
+    <h3>Your rights</h3>
+    <p>You can request deletion of your account and associated data at any time by emailing <a href="mailto:hello@ghostingstudios.com">hello@ghostingstudios.com</a>. We respond within 14 days.</p>
+  </section>
+
+  <section id="terms" class="legal">
+    <h2>Terms</h2>
+    <p class="effective">Effective May 17, 2026</p>
+
+    <p>By using any Ghosting Studios product you agree to these terms.</p>
+
+    <h3>The service</h3>
+    <p>Ghosting Studios provides the software products listed above. Some are free, some are paid subscriptions. Features and pricing of each product are described on that product's own site.</p>
+
+    <h3>Your account</h3>
+    <p>You are responsible for activity under your account. Don't use the service to break the law, abuse other users, or circumvent technical limits.</p>
+
+    <h3>Payments and refunds</h3>
+    <p>Paid subscriptions are billed in advance through Stripe. You can cancel at any time and your subscription will remain active through the end of the current billing period. If a paid feature doesn't work as advertised, email us within 30 days and we'll refund the relevant charge.</p>
+
+    <h3>Termination</h3>
+    <p>We may suspend or terminate accounts that violate these terms or abuse the service. You may close your account at any time by emailing <a href="mailto:hello@ghostingstudios.com">hello@ghostingstudios.com</a>.</p>
+
+    <h3>Disclaimer</h3>
+    <p>The service is provided "as is" without warranties of any kind. To the maximum extent permitted by law, Ghosting Studios is not liable for indirect, incidental, or consequential damages.</p>
+
+    <h3>Governing law</h3>
+    <p>These terms are governed by the laws of the jurisdiction in which Ghosting Studios is registered.</p>
+  </section>
+
+  <footer>
+    <div>© 2026 Ghosting Studios</div>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#terms">Terms</a>
+      <a href="mailto:hello@ghostingstudios.com">Contact</a>
+    </nav>
+  </footer>
+
+</div>
+
+</body>
+</html>
